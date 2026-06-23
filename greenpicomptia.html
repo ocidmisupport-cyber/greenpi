@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<title>ICT Route - Voorbereiden en onderbouwen</title>
+<title>ICT Route - Raspberry Pi</title>
 
 <style>
 * {
@@ -16,7 +16,7 @@
   font-family: Arial, sans-serif;
   overflow: hidden;
   border-radius: 22px;
-  background: linear-gradient(160deg, #000000 0%, #1f1f1f 38%,  #26C373 100%);
+  background: linear-gradient(160deg, #000000 0%, #1f1f1f 38%, #26C373 100%);
 }
 
 .banner {
@@ -96,7 +96,7 @@
 
 .tab-button:hover,
 .tab-button.active {
-  background:  #26C373;
+  background: #26C373;
   color: #12333a;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .tab-content h2 {
-  color:  #26C373;
+  color: #26C373;
   margin: 0 0 6px;
   font-size: 22px;
 }
@@ -150,7 +150,7 @@
 .note,
 .info {
   background: rgba(247,250,251,0.72);
-  border-left: 5px solid  #26C373;
+  border-left: 5px solid #26C373;
   padding: 8px 11px;
   border-radius: 10px;
   color: #24343a;
@@ -161,7 +161,7 @@
 
 .action-link {
   display: inline-block;
-  background:  #26C373;
+  background: #26C373;
   color: #12333a;
   text-decoration: none;
   border-radius: 999px;
@@ -193,15 +193,15 @@
 <div class="tab-wrapper">
 
   <section class="banner">
-    <h1>ICT Route: hardware en software voorbereiden</h1>
-    <p>Je start met de ICT-route van Sigrid Styling. Je bekijkt video’s, oefent je kennis, maakt een oefenexamen en verzamelt bewijs voor je portfolio.</p>
+    <h1>ICT Route: werken met de Raspberry Pi</h1>
+    <p>Je start met de ICT-route rond de Raspberry Pi. Je bekijkt video’s, oefent met instellingen en toepassingen en verzamelt bewijs voor je portfolio.</p>
 
     <div class="chips">
       <span>💻 ICT Route</span>
       <span>🎥 LinkedIn Learning</span>
-      <span>🧠 CompTIA A+</span>
+      <span>🍓 Raspberry Pi</span>
+      <span>🔧 Hardware & software</span>
       <span>📁 Portfolio</span>
-      <span>✅ Oefenexamen</span>
     </div>
   </section>
 
@@ -210,7 +210,6 @@
       <button class="tab-button active" onclick="openTab(event, 'start')">Start</button>
       <button class="tab-button" onclick="openTab(event, 'werken')">Zo werk je</button>
       <button class="tab-button" onclick="openTab(event, 'videos')">Video’s</button>
-      <button class="tab-button" onclick="openTab(event, 'oefenexamen')">Oefenexamen</button>
       <button class="tab-button" onclick="openTab(event, 'portfolio')">Portfolio</button>
       <button class="tab-button" onclick="openTab(event, 'bewijs')">Bewijs</button>
       <button class="tab-button" onclick="openTab(event, 'onthoud')">Onthoud</button>
@@ -219,75 +218,65 @@
     <div class="tab-content-area">
 
       <div id="start" class="tab-content active">
-        <h2>Hiep hoi! We kunnen beginnen</h2>
-        <p>We kunnen eindelijk beginnen met de ICT-route van <strong>Sigrid Styling</strong>. Op deze pagina vind je wat je nodig hebt om goed te starten.</p>
-        <p>Je bekijkt de LinkedIn Learning-video’s, oefent je kennis en laat zien wat je kunt. Alles wat je leert, gebruik je later bij de praktijkopdrachten.</p>
-        <p>Werk rustig en stap voor stap. Je hoeft niet alles meteen te weten. Het belangrijkste is dat je begint, oefent en bewijs verzamelt van je leerproces.</p>
-        <p class="note"><strong>Belangrijk:</strong> deze pagina is je startpunt voor de opdracht <em>Voorbereiden en onderbouwen hardware- en softwarewerkzaamheden</em>.</p>
+        <h2>Start met de Raspberry Pi</h2>
+        <p>We gaan werken met de <strong>Raspberry Pi</strong>: een kleine computer waarmee je veel kunt leren over hardware, software, besturingssystemen en netwerken.</p>
+        <p>Je leert hoe je de Raspberry Pi voorbereidt, aansluit, instelt en gebruikt voor praktische ICT-opdrachten.</p>
+        <p>Werk rustig en stap voor stap. Noteer wat je doet, zodat je later kunt uitleggen welke keuzes je hebt gemaakt.</p>
+        <p class="note"><strong>Belangrijk:</strong> deze pagina is je startpunt voor het werken met de Raspberry Pi binnen de ICT-route.</p>
       </div>
 
       <div id="werken" class="tab-content">
         <h2>Zo werk je met deze pagina</h2>
-        <p>Gebruik deze pagina als routekaart. Je gaat niet alleen kijken, maar ook actief verwerken wat je leert.</p>
+        <p>Gebruik deze pagina als routekaart. Je gaat niet alleen video’s bekijken, maar ook actief oefenen met de Raspberry Pi.</p>
         <ol>
-          <li>Bekijk een stukje theorie of video.</li>
-          <li>Maak korte aantekeningen van wat je leert.</li>
-          <li>Gebruik je kennis bij de praktijkopdrachten.</li>
-          <li>Maak screenshots van je voortgang of resultaten.</li>
-          <li>Zet belangrijke bewijzen en reflecties in je portfolio.</li>
+          <li>Bekijk een onderdeel van de training.</li>
+          <li>Maak korte aantekeningen van belangrijke stappen.</li>
+          <li>Pas de uitleg toe op je eigen Raspberry Pi-opstelling.</li>
+          <li>Maak screenshots of foto’s van je voortgang.</li>
+          <li>Bewaar je resultaten en reflectie in je portfolio.</li>
         </ol>
-        <p class="info"><strong>Tip:</strong> schrijf vooral dingen op die je later kunt gebruiken bij Sigrid Styling. Zo maak je de koppeling tussen theorie en praktijk.</p>
+        <p class="info"><strong>Tip:</strong> schrijf vooral op wat je hebt ingesteld, getest of opgelost.</p>
       </div>
 
       <div id="videos" class="tab-content">
-        <h2>Start met de CompTIA A+ video’s</h2>
-        <p></p>
-        <p>Bekijk de CompTIA A+ video’s en gebruik wat je leert bij de opdrachten van Sigrid Styling.</p>
-        <p>Maak tijdens het kijken korte aantekeningen. Schrijf vooral op welke begrippen, onderdelen of keuzes je later nodig hebt bij hardware- en softwarewerkzaamheden.</p>
-        <p>Je hoeft niet alles in één keer te begrijpen. Kijk gericht, pauzeer wanneer nodig en noteer wat belangrijk is.</p>
-        <p><a class="action-link" href="https://www.linkedin.com/learning/comptia-a-plus-core-1-220-1201-cert-prep/what-is-a-cpu?u=84048860" target="_blank" rel="noopener">Bekijk de video’s</a></p>
-      </div>
-
-      <div id="oefenexamen" class="tab-content">
-        <h2>Durf jij het oefenexamen te maken?</h2>
-        <p></p>
-        <p>Test je kennis met het oefenexamen. Zo ontdek je wat je al weet en waar je nog extra mee moet oefenen.</p>
-        <p>Het oefenexamen is niet bedoeld om meteen alles perfect te doen. Het helpt je juist om te zien welke onderdelen je nog beter moet leren.</p>
-        <p>Maak een screenshot van je resultaat. Dat kun je gebruiken als bewijs in je portfolio.</p>
-        <p><a class="action-link" href="https://www.linkedin.com/learning/practice-exam-1-for-comptia-a-plus-core-1-220-1201-cert-prep/about-the-practice-exam?u=84048860" target="_blank" rel="noopener">Start oefenexamen</a></p>
+        <h2>Start met de Raspberry Pi-video’s</h2>
+        <p>Bekijk de LinkedIn Learning-training over de Raspberry Pi en gebruik wat je leert bij de praktijkopdrachten.</p>
+        <p>Let tijdens het kijken op onderwerpen zoals aansluiten, installeren, configureren, werken met het besturingssysteem en eenvoudige toepassingen.</p>
+        <p>Je hoeft niet alles in één keer te begrijpen. Pauzeer de video’s, probeer stappen zelf uit en noteer wat belangrijk is.</p>
+        <p><a class="action-link" href="https://www.linkedin.com/learning/raspberry-pi-essential-training-2024?contextUrn=urn%3Ali%3AlearningCollection%3A7441348246800850944&u=84048860" target="_blank" rel="noopener">Bekijk de Raspberry Pi-video’s</a></p>
       </div>
 
       <div id="portfolio" class="tab-content">
         <h2>Portfolio-tip</h2>
-        <p>Maak screenshots van je voortgang, noteer wat je hebt geleerd en bewaar je resultaten. Zo laat je niet alleen zien wat je hebt gemaakt, maar ook hoe je hebt geleerd.</p>
-        <p class="info"><strong>Tip:</strong> zet niet alleen het eindresultaat in je portfolio, maar ook bewijs van je leerproces.</p>
+        <p>Maak screenshots of foto’s van je Raspberry Pi-opstelling, instellingen en resultaten. Zo laat je zien wat je hebt gedaan en geleerd.</p>
+        <p class="info"><strong>Tip:</strong> zet niet alleen het eindresultaat in je portfolio, maar ook bewijs van je stappen en keuzes.</p>
         <ul>
-          <li>Screenshot van bekeken video’s.</li>
-          <li>Screenshot van je oefenresultaat.</li>
-          <li>Korte reflectie: wat heb je geleerd?</li>
-          <li>Korte reflectie: wat wil je nog verbeteren?</li>
+          <li>Foto van je Raspberry Pi-opstelling.</li>
+          <li>Screenshot van instellingen of terminalopdrachten.</li>
+          <li>Korte uitleg van wat je hebt getest.</li>
+          <li>Korte reflectie: wat ging goed en wat wil je nog oefenen?</li>
         </ul>
       </div>
 
       <div id="bewijs" class="tab-content">
         <h2>Wat bewaar je als bewijs?</h2>
-        <p>Bewijs laat zien dat je actief hebt gewerkt aan de ICT-route. Verzamel daarom tijdens het werken meerdere soorten bewijs.</p>
+        <p>Bewijs laat zien dat je actief hebt gewerkt met de Raspberry Pi. Verzamel daarom tijdens het werken meerdere soorten bewijs.</p>
         <ul>
-          <li>Aantekeningen van de theorie of video’s.</li>
-          <li>Screenshots van voortgang in LinkedIn Learning.</li>
-          <li>Screenshots van het oefenexamen of oefenresultaat.</li>
-          <li>Voorbeelden waarin je de theorie gebruikt bij een praktijkopdracht.</li>
-          <li>Een korte reflectie op wat goed ging en wat je nog wilt oefenen.</li>
+          <li>Aantekeningen van de video’s en praktijkstappen.</li>
+          <li>Foto’s van aangesloten onderdelen.</li>
+          <li>Screenshots van instellingen, opdrachten of resultaten.</li>
+          <li>Voorbeelden waarin je een probleem hebt opgelost.</li>
+          <li>Een korte reflectie op je leerproces.</li>
         </ul>
         <p>Bewaar je bewijs netjes, zodat je het later makkelijk kunt terugvinden en toevoegen aan je portfolio.</p>
       </div>
 
       <div id="onthoud" class="tab-content">
         <h2>Onthoud dit goed</h2>
-        <p>Deze pagina is je startpunt. Begin rustig, werk stap voor stap en verzamel onderweg bewijs voor je portfolio.</p>
-        <p>Oefenen hoort erbij. Je hoeft niet alles meteen te weten. Door video’s te bekijken, aantekeningen te maken en jezelf te testen, word je steeds zekerder.</p>
-        <p>Gebruik wat je leert bij de opdrachten van Sigrid Styling. Zo laat je zien dat je theorie kunt koppelen aan echte ICT-werkzaamheden.</p>
-        <p class="note"><strong>Belangrijk:</strong> werk actief mee, bewaar je bewijs en reflecteer kort op wat je hebt geleerd.</p>
+        <p>De Raspberry Pi is een kleine computer waarmee je praktisch kunt oefenen met ICT. Je leert door te proberen, testen en verbeteren.</p>
+        <p>Maak aantekeningen van je stappen. Zo kun je later uitleggen hoe je iets hebt aangesloten, ingesteld of opgelost.</p>
+        <p>Gebruik wat je leert bij de opdrachten en verzamel onderweg bewijs voor je portfolio.</p>
+        <p class="note"><strong>Belangrijk:</strong> werk veilig, controleer je aansluitingen en vraag hulp als iets niet werkt zoals verwacht.</p>
       </div>
 
     </div>

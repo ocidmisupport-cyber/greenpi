@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<title>Stichting Praktijkleren - Service Monteur</title>
+<title>ICT Route - Cloud, Azure, IoT en Raspberry Pi</title>
 
 <style>
 * {
@@ -16,7 +16,7 @@
   font-family: Arial, sans-serif;
   overflow: hidden;
   border-radius: 22px;
-  background: linear-gradient(160deg, #000000 0%, #1f1f1f 38%, #6698AD 100%);
+  background: linear-gradient(160deg, #000000 0%, #1f1f1f 38%, #26C373 100%);
 }
 
 .banner {
@@ -96,7 +96,7 @@
 
 .tab-button:hover,
 .tab-button.active {
-  background: #6698AD;
+  background: #26C373;
   color: #12333a;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .tab-content h2 {
-  color: #6698AD;
+  color: #26C373;
   margin: 0 0 6px;
   font-size: 22px;
 }
@@ -150,7 +150,7 @@
 .note,
 .info {
   background: rgba(247,250,251,0.72);
-  border-left: 5px solid #6698AD;
+  border-left: 5px solid #26C373;
   padding: 8px 11px;
   border-radius: 10px;
   color: #24343a;
@@ -161,7 +161,7 @@
 
 .action-link {
   display: inline-block;
-  background: #6698AD;
+  background: #26C373;
   color: #12333a;
   text-decoration: none;
   border-radius: 999px;
@@ -172,7 +172,7 @@
 }
 
 .action-link:hover {
-  background:  #B2C6D3;
+  background: #A6EBC7;
   color: #12333a;
 }
 
@@ -185,70 +185,6 @@
   font-size: 12.5px;
   margin-bottom: 4px;
 }
-
-/* Voorkomt dat vlakken over elkaar heen schuiven of content wordt afgesneden */
-.tab-wrapper {
-  width: min(1000px, 100%);
-  min-height: 500px;
-  height: auto;
-}
-
-.banner {
-  min-height: 145px;
-  height: auto;
-}
-
-.tab-page {
-  min-height: 355px;
-  height: auto;
-  align-items: stretch;
-  padding: 0 14px 14px 12px;
-  gap: 14px;
-  overflow: visible;
-}
-
-.tab-menu {
-  flex: 0 0 205px;
-  width: 205px;
-  padding-left: 0;
-  overflow: visible;
-}
-
-.tab-content-area {
-  flex: 1 1 auto;
-  min-width: 0;
-  height: auto;
-  min-height: 341px;
-  max-height: none;
-  overflow-y: auto;
-  margin: 0;
-}
-
-.tab-button {
-  position: relative;
-  z-index: 3;
-}
-
-@media (max-width: 760px) {
-  .tab-page {
-    flex-direction: column;
-    padding: 0 12px 14px;
-  }
-
-  .tab-menu {
-    width: 100%;
-    flex: 0 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    padding: 8px 0 0;
-  }
-
-  .tab-button {
-    width: auto;
-    margin-bottom: 0;
-  }
-}
 </style>
 </head>
 
@@ -257,79 +193,62 @@
 <div class="tab-wrapper">
 
   <section class="banner">
-    <h1>Stichting Praktijkleren</h1>
-    <p>Je werkt met drie onderdelen: Servicemonteur 1, Servicemonteur 2 en servicedesk 2022.</p>
+    <h1>ICT Route: cloud, Azure, IoT en elektronica aansturen</h1>
+    <p>Je werkt aan vier onderdelen binnen de ICT-route. Je leert over cloudoplossingen, Microsoft Azure, Internet der dingen en het aansturen van elektronica met de Raspberry Pi.</p>
 
     <div class="chips">
-      <span>📘 Procedures</span>
-      <span>💬 Klantmeldingen</span>
-      <span>🏝️ Servicedesk 2022</span>
+      <span>☁️ Cloud</span>
+      <span>🔷 Azure</span>
+      <span>🌐 IoT</span>
+      <span>🍓 Raspberry Pi</span>
       <span>📁 Portfolio</span>
     </div>
   </section>
 
   <div class="tab-page">
     <div class="tab-menu">
-      <button class="tab-button active" onclick="openTab(event, 'procedures')">Servicemonteur 1</button>
-      <button class="tab-button" onclick="openTab(event, 'meldingen')">Servicemonteur 2</button>
-      <button class="tab-button" onclick="openTab(event, 'servicedesk')">servicedesk 2022</button>
-      <button class="tab-button" onclick="openTab(event, 'portfolio')">Portfolio</button>
+      <button class="tab-button active" onclick="openTab(event, 'cloud')">Werken in de cloud</button>
+      <button class="tab-button" onclick="openTab(event, 'azure')">Azure AZ-900</button>
+      <button class="tab-button" onclick="openTab(event, 'iot')">Internet der dingen</button>
+      <button class="tab-button" onclick="openTab(event, 'elektronica')">Elektronica aansturen</button>
     </div>
 
     <div class="tab-content-area">
 
-      <div id="procedures" class="tab-content active">
-        <h2>Servicemonteur 1</h2>
-        <p>In deze lessen leer je met standaardprocedures werken. Je leert welke procedure je in een bepaalde situatie moet gebruiken en hoe je je kennis en ervaring daarbij kunt inzetten.</p>
-        <ul>
-          <li>Je herkent wanneer je een procedure nodig hebt.</li>
-          <li>Je gebruikt instructies stap voor stap.</li>
-          <li>Je zoekt antwoorden op in FAQ's.</li>
-          <li>Je legt uit waarom je een bepaalde aanpak kiest.</li>
-        </ul>
-        <p class="info"><strong>Tip:</strong> noteer voorbeelden van procedures of FAQ's die je later bij praktijkopdrachten opnieuw kunt gebruiken.</p>
-        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/index.php?id=150862" target="_blank" rel="noopener">Open Servicemonteur 1</a></p>
+      <div id="cloud" class="tab-content active">
+        <h2>Werken in de cloud</h2>
+        <p>In deze opdrachten leer je meer over de cloud-producten van <strong>Microsoft Office 365</strong> en <strong>Google Workspace</strong>.</p>
+        <p>Je onderzoekt hoe organisaties cloudtoepassingen gebruiken om samen te werken, bestanden te bewaren, te communiceren en veilig online te werken.</p>
+        <p>Let goed op de verschillen tussen lokaal werken en werken in de cloud. Denk aan bereikbaarheid, rechten, opslag, delen en beveiliging.</p>
+        <p class="info"><strong>Portfolio-tip:</strong> maak screenshots van instellingen, opdrachten of voorbeelden waarin je laat zien dat je cloudtoepassingen begrijpt en gebruikt.</p>
+        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/index.php?id=203538" target="_blank" rel="noopener">Open Werken in de cloud</a></p>
       </div>
 
-      <div id="meldingen" class="tab-content">
-        <h2>Servicemonteur 2</h2>
-        <p>In deze module ga je in iedere les met een andere melding van een klant aan de slag. De nadruk ligt op het analyseren van de melding.</p>
-        <p>Je onderzoekt hoe je duidelijk krijgt wat het probleem nu eigenlijk is. Daarbij leer je goede vragen stellen, informatie ordenen en bepalen welke vervolgstap logisch is.</p>
-        <ul>
-          <li>Je leest of beluistert de klantmelding zorgvuldig.</li>
-          <li>Je haalt de belangrijkste informatie uit de melding.</li>
-          <li>Je bepaalt welke informatie nog ontbreekt.</li>
-          <li>Je formuleert wat het echte probleem waarschijnlijk is.</li>
-        </ul>
-        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/index.php?id=150864" target="_blank" rel="noopener">Open Servicemonteur 2</a></p>
+      <div id="azure" class="tab-content">
+        <h2>Microsoft Azure Fundamentals AZ-900</h2>
+        <p>Deze cursus is geschikt voor IT-medewerkers die net met <strong>Azure</strong> beginnen te werken.</p>
+        <p>Je leert meer over Azure-aanbiedingen en doet praktijkervaring op met de Azure-portal en de opdrachtregelinterface. Scriptvaardigheden zijn hiervoor niet nodig.</p>
+        <p>De cursus combineert uitleg, demonstraties en praktijklabs. Zo bouw je vertrouwen op voor vervolgcursussen en certificeringen, zoals Azure-beheerder.</p>
+        <p class="note"><strong>Belangrijk:</strong> deze cursus helpt ook bij de voorbereiding op het AZ-900-examen.</p>
+        <p><a class="action-link" href="https://learn.microsoft.com/nl-nl/training/courses/az-900t00" target="_blank" rel="noopener">Open Azure AZ-900</a></p>
       </div>
 
-      <div id="servicedesk" class="tab-content">
-        <h2>servicedesk 2022</h2>
-        <p>In deze simulatieomgeving werk je als servicedeskmedewerker op het vakantie-eiland <strong>AmeRijck</strong>. Je krijgt te maken met vragen, meldingen en situaties die passen bij een ICT-servicedesk.</p>
-        <p>Je gebruikt wat je eerder hebt geleerd: zorgvuldig lezen, het probleem analyseren, passende informatie zoeken en duidelijk vastleggen wat je doet.</p>
-        <ul>
-          <li>Je oefent met realistische servicedesk-situaties.</li>
-          <li>Je bepaalt welke melding of vraag prioriteit heeft.</li>
-          <li>Je gebruikt procedures en informatiebronnen om keuzes te maken.</li>
-          <li>Je legt je oplossing of vervolgstap duidelijk vast.</li>
-        </ul>
-        <p class="info"><strong>Tip:</strong> maak screenshots van belangrijke stappen in de simulatie. Die kun je gebruiken als bewijs in je portfolio.</p>
-        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/ict/it-systems-devices/5f34c5ca6f7fc127026cde83/" target="_blank" rel="noopener">Open servicedesk 2022</a></p>
+      <div id="iot" class="tab-content">
+        <h2>Internet der dingen</h2>
+        <p>In deze praktijkmodule leer je de enorme verscheidenheid aan toepassingen van <strong>IoT</strong> kennen en ontdek je hoe je ze kunt gebruiken.</p>
+        <p>In 10 lessen koppel je apparaten en sensoren via internet of andere netwerken aan elkaar. Je gaat aan de slag met technieken, toepassingen en protocollen.</p>
+        <p>Je gebruikt de Micro:bit en leert ook meer over beveiliging van IoT-apparaten, privacyregels en de maatschappelijke gevolgen van deze ontwikkelingen.</p>
+        <p class="info"><strong>Tip:</strong> bewaar voorbeelden van sensoren, verbindingen, instellingen en resultaten als bewijs voor je portfolio.</p>
+        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/ict/uitstroomoverstijgend/5e4aa1972580491e9252a3a3/" target="_blank" rel="noopener">Open Internet der dingen</a></p>
       </div>
 
-      <div id="portfolio" class="tab-content">
-        <h2>Portfolio-tip</h2>
-        <p>Laat in je portfolio zien dat je gestructureerd kunt werken met informatie en klantmeldingen. Bewaar niet alleen eindantwoorden, maar ook bewijs van je denkproces.</p>
-        <ul>
-          <li>Screenshot of notitie van de lessen die je hebt gemaakt.</li>
-          <li>Voorbeeld van een gebruikte procedure, instructie of FAQ.</li>
-          <li>Korte analyse van een klantmelding: wat is het probleem?</li>
-          <li>Screenshot of bewijs uit de simulatieomgeving servicedesk 2022.</li>
-          <li>Korte uitleg: welke informatie miste je nog?</li>
-          <li>Reflectie: wat ging goed en wat wil je nog oefenen?</li>
-        </ul>
-        <p class="note"><strong>Belangrijk:</strong> verzamel bewijs terwijl je werkt. Dan hoef je achteraf niet alles opnieuw op te zoeken.</p>
+      <div id="elektronica" class="tab-content">
+        <h2>Elektronica aansturen</h2>
+        <p>In deze module ga je aan de slag met de <strong>Raspberry Pi</strong>. Dit apparaatje is een complete computer waarmee je elektronica kunt aansturen.</p>
+        <p>Je maakt kennis met het Linux Operating System en leert werken met digitale in- en uitgangen.</p>
+        <p>Door onderdelen aan te sluiten, instellingen te testen en resultaten vast te leggen, laat je zien dat je hardware en software met elkaar kunt verbinden.</p>
+        <p class="note"><strong>Portfolio-tip:</strong> maak foto’s van je opstelling en screenshots van instellingen, commando’s of werkende resultaten.</p>
+        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/ict/ict-support/5e4560a7e5730d4a354ad0a7/" target="_blank" rel="noopener">Open Elektronica aansturen</a></p>
       </div>
 
     </div>

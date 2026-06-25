@@ -2,7 +2,7 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<title>ICT Route - Cloud, Azure, IoT en Raspberry Pi</title>
+<title>Raspberry Pi Weekly - Dagtaken</title>
 
 <style>
 * {
@@ -105,7 +105,7 @@
   min-width: 0;
   height: 341px;
   padding: 14px 24px;
-  overflow-y: hidden;
+  overflow-y: auto;
   background: rgba(255,255,255,0.74);
   border-radius: 18px;
   backdrop-filter: blur(1px);
@@ -148,7 +148,8 @@
 }
 
 .note,
-.info {
+.info,
+.warning {
   background: rgba(247,250,251,0.72);
   border-left: 5px solid #26C373;
   padding: 8px 11px;
@@ -157,6 +158,10 @@
   margin: 7px 0;
   font-size: 14px;
   line-height: 1.22;
+}
+
+.warning {
+  border-left-color: #f0a500;
 }
 
 .action-link {
@@ -193,62 +198,85 @@
 <div class="tab-wrapper">
 
   <section class="banner">
-    <h1>ICT Route: cloud, Azure, IoT en elektronica aansturen</h1>
-    <p>Je werkt aan vier onderdelen binnen de ICT-route. Je leert over cloudoplossingen, Microsoft Azure, Internet der dingen en het aansturen van elektronica met de Raspberry Pi.</p>
+    <h1>Raspberry Pi: kies een praktische toepassing</h1>
+    <p>Gebruik de LinkedIn Learning-serie <strong>Raspberry Pi Weekly</strong> als inspiratiebron. Je kiest één haalbare toepassing, plant de benodigde materialen en bouwt daarna een werkend prototype.</p>
 
     <div class="chips">
-      <span>☁️ Cloud</span>
-      <span>🔷 Azure</span>
-      <span>🌐 IoT</span>
       <span>🍓 Raspberry Pi</span>
+      <span>🔌 Elektronica</span>
+      <span>💻 Programmeren</span>
+      <span>🌐 IoT</span>
+      <span>📋 Planning</span>
       <span>📁 Portfolio</span>
     </div>
   </section>
 
   <div class="tab-page">
     <div class="tab-menu">
-      <button class="tab-button active" onclick="openTab(event, 'cloud')">Werken in de cloud</button>
-      <button class="tab-button" onclick="openTab(event, 'azure')">Azure AZ-900</button>
-      <button class="tab-button" onclick="openTab(event, 'iot')">Internet der dingen</button>
-      <button class="tab-button" onclick="openTab(event, 'elektronica')">Elektronica aansturen</button>
+      <button class="tab-button active" onclick="openTab(event, 'intro')">Opdracht</button>
+      <button class="tab-button" onclick="openTab(event, 'kiezen')">Project kiezen</button>
+      <button class="tab-button" onclick="openTab(event, 'materialen')">Materialen plannen</button>
+      <button class="tab-button" onclick="openTab(event, 'bouwen')">Bouwen en testen</button>
+      <button class="tab-button" onclick="openTab(event, 'portfolio')">Portfolio</button>
     </div>
 
     <div class="tab-content-area">
 
-      <div id="cloud" class="tab-content active">
-        <h2>Werken in de cloud</h2>
-        <p>In deze opdrachten leer je meer over de cloud-producten van <strong>Microsoft Office 365</strong> en <strong>Google Workspace</strong>.</p>
-        <p>Je onderzoekt hoe organisaties cloudtoepassingen gebruiken om samen te werken, bestanden te bewaren, te communiceren en veilig online te werken.</p>
-        <p>Let goed op de verschillen tussen lokaal werken en werken in de cloud. Denk aan bereikbaarheid, rechten, opslag, delen en beveiliging.</p>
-        <p class="info"><strong>Portfolio-tip:</strong> maak screenshots van instellingen, opdrachten of voorbeelden waarin je laat zien dat je cloudtoepassingen begrijpt en gebruikt.</p>
-        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/index.php?id=203538" target="_blank" rel="noopener">Open Werken in de cloud</a></p>
+      <div id="intro" class="tab-content active">
+        <h2>Opdracht: Raspberry Pi Weekly</h2>
+        <p><span class="badge">Let op</span></p>
+        <p><strong>Weekly</strong> is hier de naam van de LinkedIn Learning-serie. Het betekent niet dat je elke week verplicht een nieuwe opdracht doet.</p>
+        <p>In deze serie laat instructeur Mark Niemann-Ross verschillende praktische Raspberry Pi-technieken zien. Elke aflevering behandelt een compacte toepassing waarbij software, hardware en de fysieke wereld samenkomen.</p>
+        <p>Jij gebruikt de serie om een geschikte toepassing te kiezen die je zelf kunt onderzoeken, voorbereiden, bouwen en testen.</p>
+        <p><a class="action-link" href="https://www.linkedin.com/learning/raspberry-pi-weekly?contextUrn=urn%3Ali%3AlearningCollection%3A7441348246800850944&u=84048860" target="_blank" rel="noopener">Open Raspberry Pi Weekly</a></p>
       </div>
 
-      <div id="azure" class="tab-content">
-        <h2>Microsoft Azure Fundamentals AZ-900</h2>
-        <p>Deze cursus is geschikt voor IT-medewerkers die net met <strong>Azure</strong> beginnen te werken.</p>
-        <p>Je leert meer over Azure-aanbiedingen en doet praktijkervaring op met de Azure-portal en de opdrachtregelinterface. Scriptvaardigheden zijn hiervoor niet nodig.</p>
-        <p>De cursus combineert uitleg, demonstraties en praktijklabs. Zo bouw je vertrouwen op voor vervolgcursussen en certificeringen, zoals Azure-beheerder.</p>
-        <p class="note"><strong>Belangrijk:</strong> deze cursus helpt ook bij de voorbereiding op het AZ-900-examen.</p>
-        <p><a class="action-link" href="https://learn.microsoft.com/nl-nl/training/courses/az-900t00" target="_blank" rel="noopener">Open Azure AZ-900</a></p>
+      <div id="kiezen" class="tab-content">
+        <h2>Stap 1: kies een praktische toepassing</h2>
+        <p>Bekijk meerdere afleveringen of onderwerpen uit Raspberry Pi Weekly en kies één toepassing die past bij jouw niveau, beschikbare tijd en beschikbare materialen.</p>
+        <ol>
+          <li>Noteer minimaal drie mogelijke projecten of technieken uit de serie.</li>
+          <li>Beschrijf kort wat elk project doet en waarvoor je het zou kunnen gebruiken.</li>
+          <li>Kies één project en leg uit waarom dit haalbaar en interessant is.</li>
+        </ol>
+        <p class="info"><strong>Denk aan:</strong> sensoren, leds, knoppen, camera, netwerktoepassingen, automatisering, mediaserver, robotica of IoT-koppelingen.</p>
       </div>
 
-      <div id="iot" class="tab-content">
-        <h2>Internet der dingen</h2>
-        <p>In deze praktijkmodule leer je de enorme verscheidenheid aan toepassingen van <strong>IoT</strong> kennen en ontdek je hoe je ze kunt gebruiken.</p>
-        <p>In 10 lessen koppel je apparaten en sensoren via internet of andere netwerken aan elkaar. Je gaat aan de slag met technieken, toepassingen en protocollen.</p>
-        <p>Je gebruikt de Micro:bit en leert ook meer over beveiliging van IoT-apparaten, privacyregels en de maatschappelijke gevolgen van deze ontwikkelingen.</p>
-        <p class="info"><strong>Tip:</strong> bewaar voorbeelden van sensoren, verbindingen, instellingen en resultaten als bewijs voor je portfolio.</p>
-        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/ict/uitstroomoverstijgend/5e4aa1972580491e9252a3a3/" target="_blank" rel="noopener">Open Internet der dingen</a></p>
+      <div id="materialen" class="tab-content">
+        <h2>Stap 2: maak een materiaal- en tijdsplanning</h2>
+        <p>Omdat onderdelen soms besteld moeten worden, is planning een belangrijk onderdeel van deze opdracht.</p>
+        <ol>
+          <li>Maak een lijst van alle onderdelen die je nodig hebt.</li>
+          <li>Geef per onderdeel aan of het al aanwezig is of besteld moet worden.</li>
+          <li>Zoek uit wat de levertijd ongeveer is.</li>
+          <li>Maak een planning: voorbereiding, bestellen, bouwen, testen en verbeteren.</li>
+        </ol>
+        <p class="warning"><strong>Belangrijk:</strong> kies geen project dat niet uitvoerbaar is binnen de beschikbare tijd of waarvoor materialen te laat binnenkomen.</p>
       </div>
 
-      <div id="elektronica" class="tab-content">
-        <h2>Elektronica aansturen</h2>
-        <p>In deze module ga je aan de slag met de <strong>Raspberry Pi</strong>. Dit apparaatje is een complete computer waarmee je elektronica kunt aansturen.</p>
-        <p>Je maakt kennis met het Linux Operating System en leert werken met digitale in- en uitgangen.</p>
-        <p>Door onderdelen aan te sluiten, instellingen te testen en resultaten vast te leggen, laat je zien dat je hardware en software met elkaar kunt verbinden.</p>
-        <p class="note"><strong>Portfolio-tip:</strong> maak foto’s van je opstelling en screenshots van instellingen, commando’s of werkende resultaten.</p>
-        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/ict/ict-support/5e4560a7e5730d4a354ad0a7/" target="_blank" rel="noopener">Open Elektronica aansturen</a></p>
+      <div id="bouwen" class="tab-content">
+        <h2>Stap 3: bouwen, programmeren en testen</h2>
+        <p>Wanneer je keuze en materiaalplanning zijn goedgekeurd, ga je het project uitvoeren.</p>
+        <ul>
+          <li>Sluit de hardware zorgvuldig aan.</li>
+          <li>Installeer of configureer de benodigde software.</li>
+          <li>Test stap voor stap of elk onderdeel werkt.</li>
+          <li>Noteer problemen en beschrijf hoe je ze oplost.</li>
+        </ul>
+        <p class="note"><strong>Tip:</strong> begin klein. Zorg eerst dat de basis werkt en breid daarna pas uit.</p>
+      </div>
+
+      <div id="portfolio" class="tab-content">
+        <h2>Stap 4: bewijs voor je portfolio</h2>
+        <p>Laat in je portfolio zien dat je een bewuste keuze hebt gemaakt en dat je het project planmatig hebt uitgevoerd.</p>
+        <ul>
+          <li>Screenshot of link van de gekozen Raspberry Pi Weekly-aflevering.</li>
+          <li>Korte motivatie voor je projectkeuze.</li>
+          <li>Onderdelenlijst met beschikbaarheid en eventuele besteltijd.</li>
+          <li>Planning van voorbereiding tot testmoment.</li>
+          <li>Foto's van je opstelling en screenshots van code of instellingen.</li>
+          <li>Korte reflectie: wat werkte, wat moest je aanpassen en wat heb je geleerd?</li>
+        </ul>
       </div>
 
     </div>

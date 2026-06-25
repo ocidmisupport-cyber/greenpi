@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>ICT Route - Cloud, Azure, IoT en Raspberry Pi</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.tab-wrapper {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  border-radius: 22px;
+  background: linear-gradient(160deg, #000000 0%, #1f1f1f 38%, #26C373 100%);
+}
+
+.banner {
+  height: 145px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 22px 22px 0 0;
+  color: white;
+  padding: 22px 32px 16px;
+}
+
+.banner h1 {
+  margin: 0 0 6px;
+  font-size: 30px;
+  line-height: 1.1;
+  color: white;
+}
+
+.banner p {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.35;
+  max-width: 870px;
+  color: white;
+}
+
+.chips {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.chips span {
+  background: white;
+  color: #12333a;
+  border-radius: 999px;
+  padding: 6px 11px;
+  font-size: 13px;
+}
+
+.tab-page {
+  height: 355px;
+  display: flex;
+  gap: 12px;
+  border: none;
+  border-radius: 0 0 22px 22px;
+  overflow: hidden;
+  background: transparent;
+  padding: 0 14px 14px 0;
+}
+
+.tab-menu {
+  flex: 0 0 205px;
+  width: 205px;
+  background: transparent;
+  padding: 8px 0 10px 12px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+.tab-button {
+  width: 100%;
+  display: block;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  text-align: left;
+  padding: 6px 12px;
+  margin-bottom: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13.2px;
+  line-height: 1.1;
+}
+
+.tab-button:hover,
+.tab-button.active {
+  background: #26C373;
+  color: #12333a;
+}
+
+.tab-content-area {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 341px;
+  padding: 14px 24px;
+  overflow-y: hidden;
+  background: rgba(255,255,255,0.74);
+  border-radius: 18px;
+  backdrop-filter: blur(1px);
+  position: relative;
+  z-index: 1;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-content h2 {
+  color: #3D6B52;
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.tab-content p {
+  font-size: 14px;
+  line-height: 1.24;
+  margin: 0 0 5px;
+  color: #24343a;
+}
+
+.tab-content ul,
+.tab-content ol {
+  margin: 4px 0 6px 20px;
+  padding: 0;
+}
+
+.tab-content li {
+  font-size: 14px;
+  line-height: 1.22;
+  margin-bottom: 3px;
+  color: #24343a;
+}
+
+.note,
+.info {
+  background: rgba(247,250,251,0.72);
+  border-left: 5px solid #26C373;
+  padding: 8px 11px;
+  border-radius: 10px;
+  color: #24343a;
+  margin: 7px 0;
+  font-size: 14px;
+  line-height: 1.22;
+}
+
+.action-link {
+  display: inline-block;
+  background: #26C373;
+  color: #12333a;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 7px 13px;
+  font-weight: bold;
+  font-size: 13.5px;
+  margin-top: 4px;
+}
+
+.action-link:hover {
+  background: #A6EBC7;
+  color: #12333a;
+}
+
+.badge {
+  display: inline-block;
+  background: #1e7e8f;
+  color: white;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 12.5px;
+  margin-bottom: 4px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="tab-wrapper">
+
+  <section class="banner">
+    <h1>ICT Route: cloud, Azure, IoT en elektronica aansturen</h1>
+    <p>Je werkt aan vier onderdelen binnen de ICT-route. Je leert over cloudoplossingen, Microsoft Azure, Internet der dingen en het aansturen van elektronica met de Raspberry Pi.</p>
+
+    <div class="chips">
+      <span>☁️ Cloud</span>
+      <span>🔷 Azure</span>
+      <span>🌐 IoT</span>
+      <span>🍓 Raspberry Pi</span>
+      <span>📁 Portfolio</span>
+    </div>
+  </section>
+
+  <div class="tab-page">
+    <div class="tab-menu">
+      <button class="tab-button active" onclick="openTab(event, 'cloud')">Werken in de cloud</button>
+      <button class="tab-button" onclick="openTab(event, 'azure')">Azure AZ-900</button>
+      <button class="tab-button" onclick="openTab(event, 'iot')">Internet der dingen</button>
+      <button class="tab-button" onclick="openTab(event, 'elektronica')">Elektronica aansturen</button>
+    </div>
+
+    <div class="tab-content-area">
+
+      <div id="cloud" class="tab-content active">
+        <h2>Werken in de cloud</h2>
+        <p>In deze opdrachten leer je meer over de cloud-producten van <strong>Microsoft Office 365</strong> en <strong>Google Workspace</strong>.</p>
+        <p>Je onderzoekt hoe organisaties cloudtoepassingen gebruiken om samen te werken, bestanden te bewaren, te communiceren en veilig online te werken.</p>
+        <p>Let goed op de verschillen tussen lokaal werken en werken in de cloud. Denk aan bereikbaarheid, rechten, opslag, delen en beveiliging.</p>
+        <p class="info"><strong>Portfolio-tip:</strong> maak screenshots van instellingen, opdrachten of voorbeelden waarin je laat zien dat je cloudtoepassingen begrijpt en gebruikt.</p>
+        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/index.php?id=203538" target="_blank" rel="noopener">Open Werken in de cloud</a></p>
+      </div>
+
+      <div id="azure" class="tab-content">
+        <h2>Microsoft Azure Fundamentals AZ-900</h2>
+        <p>Deze cursus is geschikt voor IT-medewerkers die net met <strong>Azure</strong> beginnen te werken.</p>
+        <p>Je leert meer over Azure-aanbiedingen en doet praktijkervaring op met de Azure-portal en de opdrachtregelinterface. Scriptvaardigheden zijn hiervoor niet nodig.</p>
+        <p>De cursus combineert uitleg, demonstraties en praktijklabs. Zo bouw je vertrouwen op voor vervolgcursussen en certificeringen, zoals Azure-beheerder.</p>
+        <p class="note"><strong>Belangrijk:</strong> deze cursus helpt ook bij de voorbereiding op het AZ-900-examen.</p>
+        <p><a class="action-link" href="https://learn.microsoft.com/nl-nl/training/courses/az-900t00" target="_blank" rel="noopener">Open Azure AZ-900</a></p>
+      </div>
+
+      <div id="iot" class="tab-content">
+        <h2>Internet der dingen</h2>
+        <p>In deze praktijkmodule leer je de enorme verscheidenheid aan toepassingen van <strong>IoT</strong> kennen en ontdek je hoe je ze kunt gebruiken.</p>
+        <p>In 10 lessen koppel je apparaten en sensoren via internet of andere netwerken aan elkaar. Je gaat aan de slag met technieken, toepassingen en protocollen.</p>
+        <p>Je gebruikt de Micro:bit en leert ook meer over beveiliging van IoT-apparaten, privacyregels en de maatschappelijke gevolgen van deze ontwikkelingen.</p>
+        <p class="info"><strong>Tip:</strong> bewaar voorbeelden van sensoren, verbindingen, instellingen en resultaten als bewijs voor je portfolio.</p>
+        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/ict/uitstroomoverstijgend/5e4aa1972580491e9252a3a3/" target="_blank" rel="noopener">Open Internet der dingen</a></p>
+      </div>
+
+      <div id="elektronica" class="tab-content">
+        <h2>Elektronica aansturen</h2>
+        <p>In deze module ga je aan de slag met de <strong>Raspberry Pi</strong>. Dit apparaatje is een complete computer waarmee je elektronica kunt aansturen.</p>
+        <p>Je maakt kennis met het Linux Operating System en leert werken met digitale in- en uitgangen.</p>
+        <p>Door onderdelen aan te sluiten, instellingen te testen en resultaten vast te leggen, laat je zien dat je hardware en software met elkaar kunt verbinden.</p>
+        <p class="note"><strong>Portfolio-tip:</strong> maak foto’s van je opstelling en screenshots van instellingen, commando’s of werkende resultaten.</p>
+        <p><a class="action-link" href="https://www.stichtingpraktijkleren.nl/ict/ict-support/5e4560a7e5730d4a354ad0a7/" target="_blank" rel="noopener">Open Elektronica aansturen</a></p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+function openTab(event, tabId) {
+  document.querySelectorAll(".tab-content").forEach(function(content) {
+    content.classList.remove("active");
+  });
+
+  document.querySelectorAll(".tab-button").forEach(function(button) {
+    button.classList.remove("active");
+  });
+
+  document.getElementById(tabId).classList.add("active");
+  event.currentTarget.classList.add("active");
+}
+</script>
+
+</body>
+</html>
